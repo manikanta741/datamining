@@ -1,0 +1,91 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO3dSQmXSQdvpS2LCCij7a9",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/manikanta741/datamining/blob/main/aps1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "id": "f8vyrOmjAFNK"
+      },
+      "outputs": [],
+      "source": [
+        "feedback1=\"the food at kfcis good\"\n",
+        "feedback2=\"the food st kfc is verygood\"\n",
+        "feedback3=\"the food at kfc is bad\"\n",
+        ""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from textblob import TextBlob\n"
+      ],
+      "metadata": {
+        "id": "t6wwuDMKANYd"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "blob1=TextBlob(feedback1)\n",
+        "blob2=TextBlob(feedback2)\n",
+        "blob3=TextBlob(feedback3)\n"
+      ],
+      "metadata": {
+        "id": "x-fW5fRhAdC0"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(blob1.sentiment)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V82NAoD9AW81",
+        "outputId": "dc0d71d9-4c9d-47c5-a6c8-9ff2b39041f2"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Sentiment(polarity=0.7, subjectivity=0.6000000000000001)\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
